@@ -1,0 +1,94 @@
+*{
+  margin:0; padding:0; box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#0c0f25 url('https://images.unsplash.com/photo-1519666213631-cf3c4781d6f8?auto=format&fit=crop&w=1000&q=60') center/cover no-repeat;
+  overflow-x:hidden;
+  color:white;
+}
+
+#snow{
+  position:fixed; top:0; left:0;
+  width:100%; height:100%;
+  pointer-events:none;
+}
+
+.container{
+  width:90%; max-width:500px;
+  margin:70px auto;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(12px);
+  border-radius:25px; padding:30px;
+  box-shadow:0 0 50px rgba(255,255,255,0.25);
+  animation:fadeIn 1.5s ease;
+}
+
+.title{
+  font-size:2.2rem;
+  font-family:'Great Vibes', cursive;
+}
+.highlight{color:#ff4d88;}
+
+.subtitle{
+  margin:10px 0 20px;
+  font-size:1.1rem;
+  opacity:0.9;
+}
+
+/* MUSIC */
+.music-btn{
+  background:linear-gradient(135deg, #ff4d88, #b30059);
+  color:white; border:none; padding:12px 25px;
+  font-size:1rem; border-radius:30px;
+  cursor:pointer; margin-bottom:20px;
+  box-shadow:0 10px 20px rgba(255,0,150,0.4);
+}
+
+/* GIFT BOX */
+.gift-wrapper{text-align:center; margin-top:20px;}
+.gift-box{
+  font-size:80px; animation:bounce 1.5s infinite;
+}
+@keyframes bounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+}
+
+.open-btn{
+  background:#ff2e6e; padding:10px 25px;
+  border-radius:25px; font-size:1.1rem; 
+  border:none; cursor:pointer; color:white;
+}
+
+/* Reveal */
+.hidden{display:none;}
+.reveal-section{margin-top:30px; animation:fadeInSoft 1.5s ease;}
+.reveal-title{font-size:1.8rem; margin-bottom:15px; color:#ffd1dc;}
+
+.gift-image{
+  width:90%; max-width:280px; border-radius:25px;
+  box-shadow:0 10px 40px rgba(255,255,255,0.4);
+  margin-bottom:20px;
+}
+
+/* Carousel */
+.carousel img{
+  display:none; width:90%; max-width:260px;
+  border-radius:15px; margin:auto;
+  box-shadow:0 8px 30px rgba(255,255,255,0.3);
+}
+.carousel img.active{display:block;}
+
+@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+@keyframes fadeInSoft{0%{opacity:0; transform:translateY(20px);}100%{opacity:1; transform:translateY(0);}}
+.confetti{
+  position:fixed; width:8px; height:15px;
+  background:randomColor;
+  animation:fall linear forwards;
+  top:-10px;
+}
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(720deg);}
+}

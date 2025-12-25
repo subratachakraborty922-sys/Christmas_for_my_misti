@@ -1,0 +1,49 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merry Christmas Misti 🎄❤️</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Snow Effect -->
+<canvas id="snow"></canvas>
+
+<div class="container">
+    <h1 class="title">Merry Christmas, <span class="highlight">Misti</span> 🎄❤️</h1>
+    <p class="subtitle">I made this for you... because you're special to me 💕</p>
+
+    <!-- Music -->
+    <audio id="bgMusic" src="music.mp3"></audio>
+    <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+
+    <!-- Gift -->
+    <div class="gift-wrapper">
+        <div class="gift-box" id="giftBox">🎁</div>
+        <button class="open-btn" id="openGiftBtn">Open Your Gift 🎀</button>
+    </div>
+
+    <!-- Reveal Section -->
+    <div id="reveal" class="hidden reveal-section">
+        <h2 class="reveal-title">Your Christmas Gift ❤️</h2>
+        <img src="gift.jpg" class="gift-image">
+
+        <h3 class="memories-title">Our Special Memories 📸</h3>
+        <div class="carousel">
+            <img src="memory1.jpg" class="active">
+            <img src="memory2.jpg">
+            <img src="memory3.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- Confetti -->
+<div id="confetti"></div>
+
+</body>
+</html>
